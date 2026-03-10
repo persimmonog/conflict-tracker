@@ -12,7 +12,7 @@ services:
     restart: unless-stopped
     environment:
       # 大模型配置
-      - LLM_API_KEY=sk-43052fafc76d4d2fad7109713bd001c4
+      - LLM_API_KEY=
       - LLM_MODEL=qwen-plus
       - LLM_BASE_URL=https://dashscope.aliyuncs.com/api/v1
       # 数据库配置
