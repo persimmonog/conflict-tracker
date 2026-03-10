@@ -1,0 +1,53 @@
+services:
+
+  # ── 后端 API ─────────────────────────────────────────────────────
+  backend:
+    # 镜像地址（支持环境变量覆盖，用于生产部署）
+    image: conflict-tracker-backend:v3
+    # 本地构建配置（开发环境使用）
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: conflict-tracker-backend
+    restart: unless-stopped
+    environment:
+      # 大模型配置
+      - LLM_API_KEY=sk-43052fafc76d4d2fad7109713bd001c4
+      - LLM_MODEL=qwen-plus
+      - LLM_BASE_URL=https://dashscope.aliyuncs.com/api/v1
+      # 数据库配置
+      - DB_PATH=/data/news.db
+    ports:
+      - "8000:8000"      # 本地调试用，生产可注释掉
+    volumes:
+      - ./data:/data      # SQLite 数据持久化
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+  # ── 前端 Nginx ────────────────────────────────────────────────────
+  frontend:
+    # 镜像地址（支持环境变量覆盖，用于生产部署）
+    image: conflict-tracker-frontend:v3
+    # 本地构建配置（开发环境使用）
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: conflict-tracker-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

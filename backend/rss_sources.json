@@ -1,0 +1,156 @@
+{
+  "sources": [
+    {
+      "name": "Haaretz",
+      "url": "https://www.haaretz.com/misc/rss",
+      "lang": "en"
+    },
+    {
+      "name": "The Guardian - World",
+      "url": "https://www.theguardian.com/world/rss",
+      "lang": "en"
+    },
+    {
+      "name": "Google News - Middle East",
+      "url": "https://news.google.com/rss/search?q=Middle+East+Israel+Gaza+when:1d",
+      "lang": "en"
+    },
+    {
+      "name": "Google News - Israel",
+      "url": "https://news.google.com/rss/search?q=Israel+Iran+war+when:1d",
+      "lang": "en"
+    },
+    {
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "lang": "en"
+    },
+    {
+      "name": "France24",
+      "url": "https://www.france24.com/en/rss",
+      "lang": "en"
+    },
+    {
+      "name": "BBC - Middle East",
+      "url": "http://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "lang": "en"
+    },
+    {
+      "name": "Al Monitor",
+      "url": "https://www.al-monitor.com/rss",
+      "lang": "en"
+    },
+    {
+      "name": "BBC - World",
+      "url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+      "lang": "en"
+    },
+    {
+      "name": "NPR - World",
+      "url": "https://feeds.npr.org/1004/rss.xml",
+      "lang": "en"
+    },
+    {
+      "name": "Iran International",
+      "url": "https://www.iranintl.com/rss.xml",
+      "lang": "en"
+    },
+    {
+      "name": "DW News",
+      "url": "https://rss.dw.com/rdf/rss-en-all",
+      "lang": "en"
+    },
+    {
+      "name": "Reuters - World",
+      "url": "https://feeds.reuters.com/reuters/worldNews",
+      "lang": "en"
+    }
+  ],
+  "keywords": {
+    "core": [
+      "israel", "gaza", "palestine", "palestinian", "hamas",
+      "iran", "tehran", "hezbollah", "lebanon", "beirut",
+      "syria", "damascus", "assad", "yemen", "houthi", "sanaa",
+      "iraq", "baghdad", "jordan", "amman", "egypt", "cairo", "sinai",
+      "saudi arabia", "saudi", "riyadh", "uae", "dubai", "abu dhabi",
+      "qatar", "doha", "kuwait", "bahrain", "oman", "muscat",
+      "turkey", "ankara", "istanbul", "erdogan", "kurds", "kurdish", "kurdistan",
+      "west bank", "gaza strip", "jerusalem", "tel aviv", "netanyahu",
+      "middle east", "middle eastern", "levant", "mesopotamia",
+      "gulf", "persian gulf", "strait of hormuz", "red sea",
+      "以色列", "加沙", "巴勒斯坦", "哈马斯", "伊朗", "黎巴嫩", "真主党",
+      "叙利亚", "也门", "胡塞", "伊拉克", "约旦", "埃及", "沙特", "阿联酋", "卡塔尔"
+    ],
+    "conflict": [
+      "war", "warfare", "armed conflict",
+      "attack", "strike", "bombing", "bomb", "missile", "rocket",
+      "air raid", "airstrike", "air strike", "invasion", "occupation", "incursion",
+      "ceasefire", "truce", "peace talks",
+      "military", "army", "armed forces", "soldier", "troops", "casualty", "death toll",
+      "hostage", "prisoner", "detainee", "evacuation", "withdrawal",
+      "refugee", "displacement", "humanitarian crisis", "civilian",
+      "kill", "killed", "killing", "dead", "death", "die", "dies", "died",
+      "destroy", "destroyed", "damage", "damaged", "fire", "firing",
+      "shelling", "artillery", "tank", "fighter jet", "drone", "uav",
+      "explosion", "explode", "blast", "shooting", "gunfire",
+      "战争", "冲突", "袭击", "轰炸", "导弹", "军事行动", "停火", "死亡"
+    ],
+    "political_strict": [
+      "sanctions", "embargo", "blockade",
+      "embassy", "consulate", "diplomat", "ambassador",
+      "nuclear", "uranium", "enrichment", "ballistic missile"
+    ]
+  },
+  "exclude": [
+    "australia", "australian", "victoria", "melbourne", "sydney", "brisbane", "perth", "adelaide",
+    "liberal party", "labor party", "parliament of australia",
+    "canada", "canadian", "toronto", "vancouver", "ottawa",
+    "ukraine", "ukrainian", "kyiv", "kiev", "russia", "russian", "moscow", "putin",
+    "china", "chinese", "beijing", "shanghai", "taiwan", "taiwanese",
+    "india", "indian", "new delhi", "mumbai", "pakistan", "pakistani", "islamabad",
+    "japan", "tokyo", "south korea", "seoul", "north korea", "pyongyang",
+    "south africa", "johannesburg", "cape town", "brazil", "brazilian", "rio", "saopaulo",
+    "argentina", "buenos aires", "mexico", "mexican", "mexico city",
+    "germany", "german", "berlin", "france", "french", "paris", "macron",
+    "uk", "britain", "british", "london", "england", "scotland", "wales",
+    "italy", "italian", "rome", "spain", "spanish", "madrid", "barcelona",
+    "israel adesanya", "ufc", "mma", "boxing", "wrestling",
+    "basketball", "football", "soccer", "tennis", "golf", "cricket",
+    "premier league", "nba", "nfl", "mlb", "fifa", "world cup", "olympic",
+    "celebrity", "hollywood", "movie", "film", "cinema", "music", "album", "concert",
+    "fashion", "beauty", "recipe", "cooking", "cuisine", "restaurant",
+    "travel guide", "tourism", "tourist", "hotel", "resort", "vacation",
+    "cryptocurrency", "bitcoin", "ethereum", "nft", "crypto",
+    "startup funding", "venture capital", "ipo", "stock market", "shares",
+    "climate change", "global warming", "carbon", "emission", "renewable",
+    "ai", "artificial intelligence", "chatgpt", "machine learning", "deep learning",
+    "covid", "coronavirus", "pandemic", "vaccine",
+    "election", "vote", "voting", "campaign", "candidate",
+    "rape", "sexual assault", "crime", "criminal", "court case", "trial",
+    "twelve apostles", "great barrier reef", "uluru", "ayers rock",
+    "inflation", "interest rate", "gdp", "economy", "economic growth",
+    "biden", "trump", "congress", "senate", "house of representatives",
+    "supreme court", "federal court", "district court",
+    "prince", "princess", "king", "queen", "royal", "palace", "monarch",
+    "university", "college", "school", "student", "education",
+    "hospital", "healthcare", "medical", "disease", "cancer",
+    "porn", "pornography", "xxx", "adult website", "age verification",
+    "website", "app", "application", "software", "internet",
+    "celebrity gossip", "entertainment", "lifestyle", "dating", "marriage",
+    "birthday", "anniversary", "wedding", "divorce", "relationship",
+    "weather", "forecast", "temperature", "rain", "snow", "storm",
+    "traffic", "accident", "car crash", "road", "highway",
+    "animal", "pet", "dog", "cat", "wildlife", "zoo",
+    "food", "drink", "wine", "beer", "coffee", "restaurant",
+    "book", "novel", "author", "publisher", "literature",
+    "art", "museum", "gallery", "painting", "sculpture",
+    "technology", "gadget", "smartphone", "iphone", "android",
+    "social media", "facebook", "instagram", "twitter", "tiktok"
+  ],
+  "settings": {
+    "mode": "strict",
+    "require_core": true,
+    "require_context": true,
+    "min_score": 3
+  }
+}
